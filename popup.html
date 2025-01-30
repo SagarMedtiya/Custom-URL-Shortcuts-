@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortcuts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Custom URL Shortcuts</h1>
+    <div id="shortcut-list" class="shortcut-list"></div>
+    <form id="add-shortcut-form" class="add-shortcut-form">
+      <div class="form-group">
+        <label for="shortcut-key">Shortcut</label>
+        <input type="text" id="shortcut-key" placeholder="e.g., g" required />
+      </div>
+      <div class="form-group">
+        <label for="shortcut-url">URL</label>
+        <input type="text" id="shortcut-url" placeholder="e.g., https://google.com" required />
+      </div>
+      <button type="submit" class="btn">Add Shortcut</button>
+    </form>
+    <p class="manage-link"><a href="options.html">Manage Shortcuts</a></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
