@@ -168,3 +168,106 @@ body {
   .manage-link a:hover {
     text-decoration: underline;
   }
+  /* Suggested Shortcuts */
+.suggested-shortcuts {
+    margin-top: 20px;
+  }
+  
+  .suggested-shortcuts h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .add-suggested-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .add-suggested-btn:hover {
+    background-color: #45a049;
+  }
+  /* Search Bar */
+.search-bar {
+    margin-bottom: 15px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Group Toggle */
+  .form-group input[type="checkbox"] {
+    margin-left: 10px;
+  }
+  /* Enable Group Toggle */
+.form-group.toggle-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-group.toggle-group label {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #555;
+  }
+  
+  /* Custom Checkbox Styling */
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 20px;
+  }
+  
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .toggle-slider {
+    background-color: #1a73e8;
+  }
+  
+  input:checked + .toggle-slider:before {
+    transform: translateX(20px);
+  }
+  /* Analytics Dashboard */
+#analytics-chart {
+    max-width: 100%;
+    margin-top: 20px;
+  }

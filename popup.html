@@ -8,10 +8,26 @@
 </head>
 <body>
   <div class="container">
+    <!-- Header with Dark Mode Toggle -->
     <div class="header">
       <h1>Custom URL Shortcuts</h1>
       <button id="dark-mode-toggle">🌙</button>
     </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search shortcuts..." />
+      </div>
+      
+      <div class="form-group toggle-group">
+        <label for="group-toggle">Enable Group</label>
+        <label class="toggle-switch">
+          <input type="checkbox" id="group-toggle" />
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+    <!-- Category Filter -->
     <div class="category-filter">
       <label for="category">Category:</label>
       <select id="category">
@@ -21,7 +37,10 @@
         <option value="entertainment">Entertainment</option>
       </select>
     </div>
+
+    <!-- Shortcut List -->
     <div id="shortcut-list" class="shortcut-list"></div>
+    <!-- Add Shortcut Form -->
     <form id="add-shortcut-form" class="add-shortcut-form">
       <div class="form-group">
         <label for="shortcut-key">Shortcut</label>
@@ -30,6 +49,10 @@
       <div class="form-group">
         <label for="shortcut-url">URL</label>
         <input type="text" id="shortcut-url" placeholder="e.g., https://google.com" required />
+      </div>
+      <div class="form-group">
+        <label for="advanced-url">Advanced URL (use {query} for dynamic parts)</label>
+        <input type="text" id="advanced-url" placeholder="e.g., https://github.com/{query}" />
       </div>
       <div class="form-group">
         <label for="shortcut-category">Category</label>
@@ -41,8 +64,15 @@
       </div>
       <button type="submit" class="btn">Add Shortcut</button>
     </form>
-    <p class="manage-link"><a href="options.html">Manage Shortcuts</a></p>
+
+    <!-- Manage and Analytics Links -->
+    <p class="manage-link">
+      <a href="options.html">Manage Shortcuts</a> | 
+      <a href="analytics.html">View Analytics</a>
+    </p>
   </div>
+
+  <!-- Scripts -->
   <script src="popup.js"></script>
 </body>
 </html>
