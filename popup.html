@@ -8,7 +8,19 @@
 </head>
 <body>
   <div class="container">
-    <h1>Custom URL Shortcuts</h1>
+    <div class="header">
+      <h1>Custom URL Shortcuts</h1>
+      <button id="dark-mode-toggle">🌙</button>
+    </div>
+    <div class="category-filter">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="work">Work</option>
+        <option value="social">Social</option>
+        <option value="entertainment">Entertainment</option>
+      </select>
+    </div>
     <div id="shortcut-list" class="shortcut-list"></div>
     <form id="add-shortcut-form" class="add-shortcut-form">
       <div class="form-group">
@@ -18,6 +30,14 @@
       <div class="form-group">
         <label for="shortcut-url">URL</label>
         <input type="text" id="shortcut-url" placeholder="e.g., https://google.com" required />
+      </div>
+      <div class="form-group">
+        <label for="shortcut-category">Category</label>
+        <select id="shortcut-category">
+          <option value="work">Work</option>
+          <option value="social">Social</option>
+          <option value="entertainment">Entertainment</option>
+        </select>
       </div>
       <button type="submit" class="btn">Add Shortcut</button>
     </form>
